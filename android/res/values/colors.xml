@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="olive">#cf808000</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="grey56">#D08f8f8f</drawable>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#23cf34</color>
+    <color name="orange">#E47833</color>
+    <color name="lite_blue">#4E78A0</color>
+    <color name="blue">#0000FF</color>
+    <color name="fb_blue">#3B5998</color>
+</resources>

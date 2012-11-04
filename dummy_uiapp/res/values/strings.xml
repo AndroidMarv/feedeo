@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Feedeo</string>
+
+    <string name="prefs_activity_label">Preferences Activity</string>
+    <string name="refreshlist">Refresh List</string>
+    <string name="clearlist">Clear List</string>
+</resources>

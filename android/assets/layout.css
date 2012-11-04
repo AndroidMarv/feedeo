@@ -1,0 +1,241 @@
+body, html { 
+    padding : 0px; 
+    margin : 0px; 
+    width : 100%; 
+    height : 100%; 
+}
+
+aside {
+    position: fixed;
+    min-width:250px;
+    align:center;
+    clear:both;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+    display: none;
+    z-index:10;
+}
+
+/* 
+ * the loader
+ */
+
+#loader {
+    position:relative;
+    width: 100%;
+    min-height:40px;
+    padding-bottom:3px;
+    display:none;
+    clear:both;
+    /*border:1px solid #E60000;*/
+}
+
+#loadermsg {
+    display:block;
+    width:100%;
+    /* border:1px solid #E60000; */
+}
+
+#loader canvas {
+    display:block;
+    margin-left:auto;
+    margin-right:auto; 
+    /* border:1px solid #E60000; */ 
+}
+
+/* 
+ * the video list - starting with container 
+ */
+
+#container {
+    position:absolute;
+    left:0px;
+    top:50px;
+    display:block;
+    min-width: 90%;
+    min-height:40px;
+    z-index:0;   
+    overflow-x:hidden;
+    overflow-y:scroll;
+    clear:both; 
+    /* border:1px solid #E60000; */
+}
+
+#videolist {
+    position:relative;
+    display:inline;
+    padding:1px 1px 1px 1px;
+    clear:both;
+    /*border:1px solid #0000E6;*/
+}
+
+/* tags are created in command.js */
+
+.videoelement {
+    position:relative;
+    margin-top:5px;
+    display:block;
+    float:left;  
+}
+
+.videoelement span {
+   /* position:relative; */
+    display:block; 
+    clear:both;
+}
+
+.thumbnail {
+    position:relative; 
+    float:left;
+    clear:left; 
+}
+
+.overlaid_details {
+    position:absolute;
+    z-index:10;
+    /*border:1px solid #0000E6;*/
+}
+
+.overlaid_details canvas {
+    position:absolute;
+    left:35%;
+    top:35%;
+    width:30%;
+}
+
+.description {
+    position:relative;
+    margin-top:5px;
+    padding-left: 5px;
+    padding-top: 0px;
+    margin-bottom:50px; /* space for details, which is absolute */
+    float:left;
+}
+
+.button {
+    position:absolute;
+    margin:10px 20px 10px 20px;
+}
+
+.duration {
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    margin:10px 20px 10px 20px;
+    padding:4px 7px 4px 7px;
+}
+
+.backimage {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    overflow: visible;
+}
+
+#novideosmessage {
+    position: relative;
+    display: none;
+}
+
+.actions {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    /*border:1px solid #E60000;*/
+}
+
+.interaction {
+    position:relative;
+    display: inline;
+    height:30px;
+    width:30px;
+    margin-left:5px;
+    margin-right:5px;
+    padding-top:5px;
+    /*border:1px solid #00E600;*/
+}
+
+.heart {
+    position:absolute;
+    top:4px;
+    right:6px;
+    width:15px;
+    height:15px;
+}
+
+.ownerpic {
+    position:absolute;
+    width:30px;
+    height:30px;
+    right:8px;
+}
+
+.mytitle {
+    position:absolute;
+    left:5px;
+    right:30px;
+}
+/*
+ * feedback for the app
+ */
+
+#feedbackform fieldset {
+    margin: 10px 10px 10px 10px;
+}
+
+#feedbackform fieldset label {
+    display: block;
+}
+
+#feedbackform fieldset input[type="submit"] {
+    padding: 8px 15px;
+    width: 100%;
+}
+
+#feedbackform input[type="submit"] {
+    width: 100%;
+    padding: 8px 15px; 
+}
+
+#feedbackform input[type="focus"]:hover {
+    -webkit-animation: pulse 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.2);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.9);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.2);
+    }
+}
+
+/* 
+ * Misc
+ */
+
+#coverbody {
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:5;
+    /*border:1px solid #E60000;*/
+}
+
+/*
+ * Defaults 
+ */
+
+div  {overflow:hidden;}
+
+.createdtime {
+    width:100%; 
+}

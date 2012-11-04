@@ -1,0 +1,176 @@
+body {
+    background-color:#fff;
+}
+
+aside {
+    background-color: #bbb;
+    opacity: 0.9;
+    border-radius: 23px;
+}
+
+/* 
+ * the loader 
+ */
+
+#loader {
+}
+
+#loadermsg {
+    text-align:center;
+}
+
+/* 
+ * the video list - starting with container 
+ */
+
+#videolist {
+    list-style-type:none;
+    list-style-position:outside;
+}
+
+.thumbnail {
+    min-height:96px;
+    background-size:auto 100%;
+    background:URL('images/blank.png') no-repeat center;
+}
+
+.overlaid_details canvas {
+    opacity:1;
+}
+
+.overlaid_details {
+    transition: all 0.25s ease-in-out;
+}
+
+.description {
+    font-size:15px;
+}
+
+.actions {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size:13px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
+
+.duration {
+    border-radius: 3px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size:13px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    color: #fff;
+    background-color:rgba(100,100,100,0.5);
+}
+
+.mytitle {
+    overflow:hidden;
+    vertical-align:text-bottom;
+}
+
+.ownerpic {
+    border-radius: 10px;
+    opacity:0.8;
+    -webkit-transform: rotate(-5deg); 
+}
+
+.transparent {
+    opacity:0.4;
+    filter:alpha(opacity=40); 
+}
+
+/*
+ * feedback for the app
+ */
+
+#feedbackform fieldset label {
+    font-weight: bold;
+    line-height: 1.4;
+    color: #666;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 0 1px 1px #fff;
+}
+
+#feedbackform fieldset input[type="submit"] {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    color: #444;
+    border: none;
+    background-color: #fff;
+    border-radius: 23px;
+    opacity:1;
+}
+
+#feedbackform input[type="submit"] {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    background-image: -webkit-gradient(linear, "0% 0%, 0$ 100%, from(#fff), to (#bbb));
+    background-color: #fff;
+}
+
+#feedbackform input[type="focus"]:hover {
+    -webkit-animation: pulse 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.2);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.9);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.2);
+    }
+}
+
+/* 
+ * Misc
+ */
+
+.disabled {
+    opacity:0.3;
+}
+
+.notpressed {
+    opacity:0.7;
+/*    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+*/
+}
+
+.pressed {
+    opacity:1;
+/*    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,.8)));
+*/
+    background: -webkit-radial-gradient(center, ellipse farthest-side, #fff 0%, #008383 100%);
+/*    -webkit-transform: rotate(-20deg); */
+}
+
+#coverbody {
+    background-color:#000;
+    opacity:0.5;
+    filter:alpha(opacity=50); 
+}
+
+.glow {
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:        0 0 20px #9ecaff,
+                 inset 0 0 20px #9ecaff;
+}
+
+.createdtime {
+    font-family: droid serif;
+    font-weight: italic;
+    font-size:14px;
+}
+
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+/*
+ * Defaults 
+ */
+
+div  {overflow:hidden;}
