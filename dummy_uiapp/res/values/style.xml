@@ -1,0 +1,9 @@
+<!-- res/values/style.xml -->
+<resources>
+
+    <style name="Theme.MyTheme" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

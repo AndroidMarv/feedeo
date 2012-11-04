@@ -1,0 +1,77 @@
+diff --git a/assets/style.css b/assets/style.css
+index e9b110d..571278e 100755
+--- a/assets/style.css
++++ b/assets/style.css
+@@ -48,11 +52,11 @@ aside {
+ }
+ 
+ .videoelement:nth-child(even) {
+-    background-color:#acacac;
++    background-color:#f0f0f0;
+ }
+ 
+ .videoelement:nth-child(odd) {
+-    background-color:#959595;
++    background-color:#ffffff;
+ }
+ 
+ .thumbnail {
+@@ -86,8 +90,14 @@ aside {
+     font-weight: bold;
+     font-size:13px;
+     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+-    color: #fff;
+-    background-color:rgba(100,100,100,0.5);
++    color:#ffffff;
++    background-color:#ffffff;
++}
++
+@@ -102,8 +112,8 @@ aside {
+ #feedbackform fieldset label {
+     font-weight: bold;
+     line-height: 1.4;
+-    color: #666;
+-    color: rgba(0,0,0,0.6);
++    color:#ffffff;
++    color:#ffffff;
+     text-shadow: 0 1px 1px #fff;
+ }
+ 
+@@ -111,9 +121,9 @@ aside {
+     font-family: Helvetica, Arial, sans-serif;
+     font-weight: bold;
+     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+-    color: #444;
++    color:#ffffff;
+     border: none;
+-    background-color: #fff;
++    background-color:#ffffff;
+     border-radius: 23px;
+     opacity:1;
+ }
+@@ -123,7 +133,7 @@ aside {
+     font-weight: bold;
+     border: none;
+     background-image: -webkit-gradient(linear, "0% 0%, 0$ 100%, from(#fff), to (#bbb));
+-    background-color: #fff;
++    background-color:#ffffff;
+ }
+ 
+ #feedbackform input[type="focus"]:hover {
+@@ -165,19 +175,25 @@ aside {
+ }
+ 
+ #coverbody {
+-    background-color:#000;
++    background-color:#ffffff;
+     opacity:0.5;
+     filter:alpha(opacity=50); 
+ }
+ 
+ .glow {
+     outline:none;
+-    border-color:#9ecaed;
++    border-color:#ffffff;
+     box-shadow:        0 0 20px #9ecaff,
+                  inset 0 0 20px #9ecaff;
+ }

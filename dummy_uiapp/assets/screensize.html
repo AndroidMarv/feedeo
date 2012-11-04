@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<title>Different screen sizes</title>
+<script language="JavaScript" type="text/javascript">
+// more screen sizes at table 3. of
+// http://developer.android.com/guide/practices/screens_support.html 
+var sizes = [ ['QVGA',	  240, 320],
+              ['640X480', 480, 640],
+              ['HVGA',	  320, 480], 
+              ['WVGA800', 480, 800], 
+              ['WVGA854', 480, 854], 
+              ['WXGA',   1024, 768], 
+              ['WXGA',   1280, 800]
+            ];
+var w1;
+var launchwindow = function (f,val) {
+  var select=Number(val);
+  w1=window.open('index.html', '', 
+                'width=' + sizes[select][1] + ',height=' + sizes[select][2]);
+  w1.focus();
+  w2=window.open('index.html', '', 
+                'width=' + sizes[select][2] + ',height=' + sizes[select][1]);
+  w2.focus();
+
+}
+
+var loadform = function() {
+  var f = document.getElementById("f");
+  var i=0;
+  for (i=0; i<sizes.length; i++) {
+     var str = "<input type='radio' name='screensize' " +
+               "onclick='launchwindow(this.form,"+i+")'" +
+               "value='" + i + "' >" + sizes[i][0] + "</input><br>";
+     f.innerHTML += str; 
+  }
+}
+</script>
+</head>
+
+<body onload='loadform();'>
+
+<header>
+<title>Load screen sizes</title>
+</header>
+
+<div id="selection">
+Please choose a screen size (no landscape).<br>
+</div>
+
+
+<form id="f" action="" onsubmit="launchwindow(this.form);" >
+</form>
+
+</body>
+</html>
