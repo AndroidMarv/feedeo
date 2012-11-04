@@ -1,0 +1,22 @@
+# view AndroidManifest.xml #generated:37
+-keep class com.facebook.android.FriendsList { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.facebook.android.GraphExplorer { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.facebook.android.Hackbook { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.facebook.android.IntentUriHandler { <init>(...); }
+
+# view land/res/layout-land/main.xml #generated:23
+# view port/res/layout-port/main.xml #generated:23
+-keep class com.facebook.android.LoginButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.facebook.android.Places { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.facebook.android.SplashActivity { <init>(...); }
+

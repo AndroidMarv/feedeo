@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="limit">
+		<item>&lt; 20 records (fast respose)</item>
+		<item>&lt; 100 records</item>
+		<item>&lt; 500 records</item>
+		<item>unlimited (long wait)</item>
+        </string-array>
+
+	<string-array name="limit_value">
+		<item>10</item>
+		<item>50</item>
+		<item>250</item>
+		<item>0</item>
+        </string-array>
+
+	<string-array name="days">
+		<item>Today</item>
+		<item>This week</item>
+		<item>Fortnight</item>
+		<item>One month (approx)</item>
+		<item>Two months</item>
+		<item>Three months</item>
+	</string-array>
+
+	<string-array name="days_value">
+		<item>1</item>
+		<item>7</item>
+		<item>15</item>
+		<item>30</item>
+		<item>61</item>
+		<item>91</item>
+	</string-array>
+</resources>

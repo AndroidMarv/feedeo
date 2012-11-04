@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/refresh"
+          android:icon="@drawable/ic_refresh"
+          android:title="Refresh" />
+    <item android:id="@+id/stop"
+          android:icon="@drawable/ic_stop"
+          android:title="Stop" />
+    <item android:id="@+id/logout"
+          android:icon="@drawable/ic_logout"
+          android:title="Logout" />
+</menu>
